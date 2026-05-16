@@ -34,4 +34,8 @@ def chat(req: ChatRequest):
         }
     )
 
-    return response.json()
+    data = response.json()
+
+    return {
+        "reply": data["choices"][0]["message"]["content"]
+    }
