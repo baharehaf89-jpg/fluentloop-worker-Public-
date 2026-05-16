@@ -39,3 +39,5 @@ def chat(req: ChatRequest):
     return {
         "reply": data["choices"][0]["message"]["content"]
     }
+
+# update
