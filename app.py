@@ -24,7 +24,7 @@ def chat(req: ChatRequest):
             "Content-Type": "application/json"
         },
         json={
-            "model": "openai/gpt-3.5-turbo",
+            "model": "openai/gpt-4o-mini",
             "messages": [
                 {
                     "role": "user",
